@@ -86,27 +86,139 @@
         </section>
         <section id="content1">
             <nav class="nav">
+              
+
+
+
+
+
+
+
+
+
                 <ul class="bookmark-lists">
-                    <li class="bookmark">대표차량</li>
-                    <li class="bookmark_active"><a href="#">BMW</a></li>
+                    <!-- <li class="bookmark">대표차량</li>
+                    <li class="bookmark"><a href="#">BMW</a></li>
                     <li class="bookmark"><a href="#">BENZ</a></li>
                     <li class="bookmark"><a href="#">HYUNDAI</a></li>
                     <li class="bookmark"><a href="#">KIA</a></li>
-                    <li class="bookmark"><a href="#">HONDA</a></li>
+                    <li class="bookmark"><a href="#">HONDA</a></li> -->
+                    <div class="tab">
+                      <button class="tablinks" onclick="openCity(event, 'BMWE90328i')" id="defaultOpen">BMW E90 328i</button>
+                      <button class="tablinks" onclick="openCity(event, 'HONDAACCORD2_4')">HONDA ACCORD 2.4</button>
+                      <button class="tablinks" onclick="openCity(event, 'VELOSTERJS1_6')">VELOSTER JS 1.6</button>
+                    </div>
                 </ul>
             </nav>
             <article class="article_right1">
-                
+              
+              <!-- <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+              </div> -->
+              
+              <div id="BMWE90328i" class="tabcontent">
+                <h3>BMW E90 328i</h3>
+                <p>6기통 자연흡기 3000cc 차량으로 기름먹는 탱크지만 <br> 저공해2종 혜택을 받을수 있는 괴이한 차량이다.</p>
+                <img class="BMWE90328iimg" src="/images/KakaoTalk_20220528_125007724_06.jpg" alt="BMWE90328i">
+              </div>
+              
+              <div id="HONDAACCORD2_4" class="tabcontent">
+                <h3>HONDA ACCORD 2.4</h3>
+                <p>4기통 자연흡기 2400cc 차량으로 기름이 신기할만큼 먹지않는 차량으로 <br> 저공해3종 혜택을 받을수있다.</p>
+                <img class="HONDAACCORD2_4img" src="/images/KakaoTalk_20220528_125007724_13.jpg" alt="HONDAACCORD2_4"> 
+              </div>
+              
+              <div id="VELOSTERJS1_6" class="tabcontent">
+                <h3>VELOSTER JS 1.6</h3>
+                <p>4기통 터보 1600cc 차량으로 기름을 3000cc 급으로 먹으며 <br> 저공해 혜택도 없다.</p>
+                <img class="VELOSTERJS1_6img" src="/images/KakaoTalk_20220528_125128000_20.jpg" alt="VELOSTERJS1_6">
+              </div>
 
             </article>
         </section>
         <section id="content2">
-            <article class="article_square1"></article>
-            <article class="article_square2"></article>
-            <article class="article_square3"></article>
-            <article class="article_square3"></article>
+          <h1>우리들의 일그러진 호구리스트</h1>
+          <article class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/images/free-icon-man-avatar-53125.png" alt="Avatar" style="width:150px;height:150px; margin-top: 25px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>GU</h1> 
+                <p>설계자 & 개발자</p> 
+                <p>눈물이 앞을가리네</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/images/free-icon-man-avatar-53125.png" alt="Avatar" style="width:150px;height:150px; margin-top: 25px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>KANG</h1> 
+                <p>중개자</p> 
+                <p>한숨만 나오네</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/images/free-icon-man-avatar-53125.png" alt="Avatar" style="width:150px;height:150px; margin-top: 25px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>--</h1> 
+                <p>--</p> 
+                <p>--</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/images/free-icon-man-avatar-53125.png" alt="Avatar" style="width:150px;height:150px; margin-top: 25px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>--</h1> 
+                <p>--</p> 
+                <p>--</p>
+              </div>
+            </div>
+          </article>
+
         </section>
-        <footer id="footer"></footer>
+        <footer id="footer">
+          <div id="bottomMenu">
+            <ul>
+              <li><a href="#" target="_blank">회사 소개</a></li>
+              <li><a href="#" target="_blank">개인정보처리방침</a></li>
+              <li><a href="#" target="_blank">가이드</a></li>
+              <li><a href="#" target="_blank">제휴안내</a></li>
+            </ul>
+          
+            <div id="sns">
+          <ul>
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="images/sns-1.png"></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><img src="images/sns-2.png"></a></li>
+            <li><a href="#" target="_blank"><img src="images/sns-3.png"></a></li>
+          </ul>
+            </div>
+          </div>
+          
+          <div id="company">
+          <p>회사명: 00상사 &nbsp&nbsp 대표자: GU &nbsp&nbsp 주소: 경기도 고양시 일산서구 중앙로 0000 (일송) 3층 123호 &nbsp&nbsp (대표전화) 010-0000-0000</p>
+          <p>사업자등록번호: 000-00-00000 &nbsp&nbsp 통신판매업신고번호: 2021-고양일산서-0000 &nbsp&nbsp 개인정보보호책임자: GU (00000@naver.com)</p>
+          <p>COPURIGHT (c) 00상사 ALL RIGHTS RESERVED.</p>
+          </div>
+          
+
+        </footer>
 
     </div>
 </body>

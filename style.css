@@ -1,158 +1,252 @@
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: #e3f2fd;
-        }
-
-        #wrap {
-            width: 1200px;
-            margin: 0 auto;
-        }
-
-
-        #header {
-            width: 100%;
-            height: 50px;
-            background-color: black;
-            position: sticky; 
-            top: 0;
-            z-index: 1;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0px 8px 0px 8px;
-            height: 50px;
-        }
-
-
-        .navbar__logo i {
-            color: white;
-            padding-left: 0;
-        }
-
-        .navbar__logo >a {
-            text-decoration: none;
-            color: white;
-        }
-
-
-        .navbar__menu {
-            list-style: none;
-            display: flex;
-            padding-left: 0;
-        }
-
-        .navbar__menu > li > a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .navbar__menu li {
-            padding: 8px 30px;
-        }
-
-        .navbar__menu li:hover {
-            background-color: orange;
-            border-radius: 3px;
-        }
-
-        .navbar__icons {
-            list-style: none;
-            display: flex;
-            color: white;
-            margin: 0;
-            padding-left: 0;
-        }
-
-        .navbar__icons li {
-            padding: 8px 12px;
-            margin: 0;
-        }
-
-        .navbar__toggleBtn {
-            color: white;
-            position: absolute;
-            right: 15px;
-            font-size: 20px;
-            display: none;
-        }
-
-
-
-        #banner {
-            width: 100%;
-            height: 500px;
-            /* background-color: gray; */
-        }
-
-        .slider {
-  list-style:none;
-  height:500px;
-  overflow:hidden;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    background-color: #e3f2fd;
+}
+
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+#header {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 8px 0px 8px;
+    height: 50px;
+}
+
+
+.navbar__logo i {
+    color: white;
+    padding-left: 0;
+}
+
+.navbar__logo>a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.navbar__menu {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar__menu>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar__menu li {
+    padding: 8px 30px;
+}
+
+.navbar__menu li:hover {
+    background-color: orange;
+    border-radius: 3px;
+}
+
+.navbar__icons {
+    list-style: none;
+    display: flex;
+    color: white;
+    margin: 0;
+    padding-left: 0;
+}
+
+.navbar__icons li {
+    padding: 8px 12px;
+    margin: 0;
+}
+
+.navbar__toggleBtn {
+    color: white;
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+    display: none;
+}
+
+
+
+#banner {
+    width: 100%;
+    height: 500px;
+    /* background-color: gray; */
+}
+
+.slider {
+    list-style: none;
+    height: 500px;
+    overflow: hidden;
+}
+
 .slider:after {
-  content:'';
-  display:block;
-  clear:both;
+    content: '';
+    display: block;
+    clear: both;
 }
+
 .slider li {
 
-  width:100%;
-  height:500px;
-  opacity:0;
+    width: 100%;
+    height: 500px;
+    opacity: 0;
 }
+
 .slider li div {
-  width:100%;
-  height:100%;
-  background-size: 100% 500px;
-  position:relative;
-  z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 500px;
+    position: relative;
+    z-index: -1;
 }
+
 .slider li dl {
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  left:20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
 }
+
 .slider li .right {
-  left:auto;
-  right:20px;
-  text-align:right;
+    left: auto;
+    right: 20px;
+    text-align: right;
 }
+
 .slider li dt {
-  color:#fff;
-  font-size:3rem;
-  text-shadow:1px 1px 10px #444;
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 1px 1px 10px #444;
 }
+
 .slider li dd {
-  color:#fff;
-  text-shadow:1px 1px 10px #444;
+    color: #fff;
+    text-shadow: 1px 1px 10px #444;
 }
+
 .btn {
-  text-align:center;
-  margin-top: -50px;
-  
+    text-align: center;
+    margin-top: -50px;
+
 }
+
 .btn button {
-  border:1px solid rgba(204, 204, 204, 0);
-  background-color:rgba(255, 255, 255, 0);
-  color:gray;
-  font-size:2rem;
-  cursor:pointer;
-  z-index: 1;
-  border-radius: 5px;
+    border: 1px solid rgba(204, 204, 204, 0);
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(30, 29, 27, 0.729);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 5px;
 }
 
 .btn button:hover {
-  background-color:skyblue;
+    background-color: rgba(128, 128, 128, 0.26);
 
+}
+
+/* 좌측 탭메뉴 */
+.tab {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 15px 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-left: none;
+    height: 100%;
+}
+
+.article_right1>#BMWE90328i>.BMWE90328iimg {
+    width: 100%;
+    height: 100%;
+}
+
+.article_right1>#HONDAACCORD2_4>.HONDAACCORD2_4img {
+    width: 100%;
+    height: 100%;
+}
+
+.article_right1>#VELOSTERJS1_6>.VELOSTERJS1_6img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+#content1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+#content1>.nav {
+    float: left;
+    width: 20%;
+    height: 500px;
+    background-color: rgba(128, 128, 128, 0.116);
+
+}
+
+
+.bookmark-lists {
+    text-align: center;
+    list-style: none;
+
+}
+
+
+
+.bookmark-lists>li>a {
+    text-decoration: none;
 }
 
 
@@ -162,237 +256,294 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        #content1 {
-            width: 100%;
-            overflow: hidden;
-        }
-
-        #content1 >.nav {
-            float: left;
-            width: 20%;
-            height: 500px;
-            background-color: rgba(128, 128, 128, 0.116);
-        }
-
-
-        .bookmark-lists {
-            text-align: center;
-            list-style: none;
-
-        }
-
-        .bookmark {
-            padding: 10px;
-            
-        }
-
-        .bookmark-lists > li > a {
-            text-decoration: none;
-        }
-
-        .bookmark:hover {
+/* .bookmark:hover {
             background-color: orange;
-        }
+        } */
 
-        .bookmark_active {
+/* .bookmark_active {
              padding: 10px;
             background-color: red;
-        }
+        } */
+
+/*   .bookmark {
+            padding: 10px;
+            
+        } */
+
+
+
+
+#content1>.article_right1 {
+    float: left;
+    width: 80%;
+    height: 500px;
+    /* background-color: black; */
+}
+
+#content2 {
+    overflow: hidden;
+    padding: 5%;
+    background-color: rgba(255, 255, 0, 0.055);
+}
+
+#content2>h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* 프로필 플립카드 시작 */
+.flip-card {
+    background-color: transparent;
+    float: left;
+    width: 23%;
+    margin: 1%;
+    height: 200px;
+    border-radius: 5%;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* 프로필 플립카드 끝 */
+
+
+
+
+/* 푸터 영역 */
+
+#footer {
+    width: 100%;
+    height: 150px;
+    border-top: 2px solid #222;
+    /* 위쪽에 가로선 추가 */
+}
+
+
+
+#bottomMenu {
+    width: 100%;
+    height: 20px;
+}
+
+#bottomMenu ul {
+    margin-top: 15px;
+}
+
+#bottomMenu ul li {
+    float: left;
+    /* 가로로 배치 */
+    padding: 5px 20px;
+    border-right: 1px solid #ddd;
+    list-style: none;
+    
+    /* 항목 오른쪽에 세로선 */
+}
+
+
+#bottomMenu ul li:last-child {
+    border-right: none;
+    /* 마지막 항목에는 오른쪽 세로선 없음 */
+}
+
+#bottomMenu ul li a,
+#bottomMenu ul li a:visited {
+    font-size: 15px;
+    /* 폰트 크기 */
+    color: #666;
+    /* 폰트 색상 */
+    text-decoration: none;
+}
+
+#bottomMenu {
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+
+#sns {
+    position: absolute;
+    right: 0;
+    /* 오른쪽 끝에 배치 */
+}
+
+#sns ul li {
+    border: none;
+    /* 세로선 없이 */
+    padding: 5px;
+}
+
+#company {
+    clear: left;
+    /* 플로팅 해제. clear: both도 가능 */
+    margin-top: 25px;
+    /* 위쪽 마진 */
+    margin-left: 20px;
+    /* 왼쪽 마진 */
+}
+
+p {
+    font-size: 14px;
+    /* 폰트 크기 */
+    color: #aaa;
+    /* 폰트 색상 */
+    line-height: 25px;
+    /* 글자 높이 간격*/
+}
+
+
+
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1240px) {
+
+    #wrap {
+        width: 100%;
+    }
+
+    #content2 .flip-card {
+        width: 100%;
+    }
+
+}
+
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px) {
+
+    header {
+        position: fixed;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__logo {
+        margin-top: 15px;
+    }
+
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 15px;
+        background-color: gray;
+    }
+
+    .navbar__menu li {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .navbar__icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+        background-color: gray;
+    }
+
+    .navbar__toggleBtn {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .navbar__menu.active,
+    .navbar__icons.active {
+        display: flex;
+    }
+
+    /* .article_right1 > .tabcontent > img{
+                
+            } */
+
+    /* #content2 {
+                overflow: hidden;
+            } */
+
+    /* .tabcontent {
+               
+            } */
+
+    #content1 {
+        width: 100%;
+        overflow: scroll;
+    }
 
 
 
 
 
 
+}
+
+/* 화면 너비 0 ~ 480px */
+@media (max-width: 480px) {
+
+    header {
+        position: fixed;
+    }
+
+    #content1>.nav {
+        width: 100%;
+        height: 200px;
+    }
+
+    .bookmark {
+        font-size: small;
+        padding-top: 5px;
+    }
 
 
+    #content1>.article_right1 {
+        width: 100%;
+        height: 200px;
+    }
 
+    #content2>.article_square1 {
+        width: 98%;
+        border-radius: 5px;
+    }
 
+    #content2>.article_square2 {
+        width: 98%;
+        border-radius: 5px;
+    }
 
-        #content1 >.article_right1 {
-            float: left;
-            width: 80%;
-            height: 500px;
-            /* background-color: black; */
-        }
-
-        #content2 {
-            overflow: hidden;
-            padding: 5%;
-            background-color: rgba(255, 255, 0, 0.144);
-        }
-
-        #content2 >.article_square1 {
-            float: left;
-            width: 23%;
-            margin: 1%;
-            height: 200px;
-            border-radius: 5%;
-            background-color: #0077d98a;
-        }
-
-        #content2 >.article_square2 {
-            float: left;
-            width: 23%;
-            margin: 1%;
-            height: 200px;
-            border-radius: 5%;
-            background-color: #0077d98a;
-        }
-
-        #content2 >.article_square3 {
-            float: left;
-            width: 23%;
-            margin: 1%;
-            height: 200px;
-            border-radius: 5%;
-            background-color: #0077d98a;
-        }
-
-        #content2 >.article_square3 {
-            float: left;
-            width: 23%;
-            margin: 1%;
-            height: 200px;
-            border-radius: 5%;
-            background-color: #0077d98a;
-        }
-
-        #footer {
-            width: 100%;
-            height: 100px;
-            background-color: rgba(0, 128, 0, 0.13);
-        }
-
-        /* 화면 너비 0 ~ 1200px */
-        @media (max-width: 1240px) {
-
-            #wrap {
-                width: 100%;
-            }
-
-            #content2 .article_square1 {
-                width: 23%;
-            }
-
-            #content2 .article_square2 {
-                width: 23%;
-            }
-
-            #content2 .article_square3 {
-                width: 23%;
-            }
-
-            #content2 .article_square4 {
-                width: 23%;
-            }
-        }
-
-        /* 화면 너비 0 ~ 768px */
-        @media (max-width: 768px) {
-
-            header {
-                position: fixed;
-            }
-
-            .navbar {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .navbar__logo {
-                margin-top: 15px;
-            }
-
-            .navbar__menu {
-                display: none;
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-                margin-top: 15px;
-                background-color: gray;
-            }
-
-            .navbar__menu li {
-                width: 100%;
-                text-align: center;
-
-            }
-
-            .navbar__icons {
-                display: none;
-                justify-content: center;
-                width: 100%;
-                background-color: gray;
-            }
-
-            .navbar__toggleBtn {
-                display: block;
-                margin-top: 15px;
-            }
-
-            .navbar__menu.active,
-            .navbar__icons.active {
-                display: flex;
-            }
-
-
-
-
-
-
-        }
-
-        /* 화면 너비 0 ~ 480px */
-        @media (max-width: 480px) {
-
-            header {
-                position: fixed;
-            }
-
-            #content1 >.nav {
-                width: 100%;
-                height: 200px;
-            }
-
-            .bookmark {
-                font-size: small;
-                padding-top: 5px;
-            }
-
-
-            #content1 >.article_right1 {
-                width: 100%;
-                height: 200px;
-            }
-
-            #content2 >.article_square1 {
-                width: 98%;
-                border-radius: 5px;
-            }
-
-            #content2 >.article_square2 {
-                width: 98%;
-                border-radius: 5px;
-            }
-
-            #content2 >.article_square3 {
-                width: 98%;
-                border-radius: 5px;
-            }
-        }
-
+    #content2>.article_square3 {
+        width: 98%;
+        border-radius: 5px;
+    }
+}
