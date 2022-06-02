@@ -6,3 +6,8 @@
 
 https://dudurim.github.io/HOGU/
 
+코드 푸시할때 오류뜨면
+
+$ git push origin +master
+
+강제 푸시 진행
